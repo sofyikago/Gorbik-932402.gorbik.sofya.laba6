@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио студентки-разработчика Горбик Софьи Алексеевны: проекты, навыки и скриншоты работ.">
+    <title>О себе — Горбик Софья Алексеевна</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/manifest.json">
+    <script src="script.js" defer></script>
+</head>
+<body class="theme-light">
+
+    <header>
+        <h1>Горбик Софья Алексеевна</h1>
+        <p>Студентка-разработчик</p>
+        <button id="theme-toggle" type="button">Тёмная тема</button>
+        <nav aria-label="Основная навигация">
+            <ul class="nav-list">
+                <li><a href="#about">О себе</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#gallery">Скриншоты</a></li>
+                <li><a href="#contact">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>О себе</h2>
+            <img src="image/photo.jpg" alt="Портрет студентки Горбик Софьи Алексеевны" width="200" height="200">
+            <p>Студентка, изучающая веб-разработку и создающая свои первые проекты :)</p>
+        </section>
+
+        <section id="skills">
+            <h2>Навыки</h2>
+            <ul class="skills-grid">
+                <li class="skill-card">
+                    <span class="badge">Top skill</span>
+                    HTML5
+                </li>
+                <li class="skill-card">CSS3</li>
+                <li class="skill-card">JavaScript</li>
+                <li class="skill-card">Git</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Проекты</h2>
+            <div class="project-controls">
+                <button id="add-project" type="button">Добавить проект</button>
+                <button id="remove-project" type="button">Удалить последний</button>
+                <button id="toggle-projects" type="button" aria-expanded="true">Свернуть проекты</button>
+            </div>
+            <div class="cards">
+                <article class="project-card">
+                    <h3>Сайт-портфолио</h3>
+                    <p>Стек: HTML, CSS</p>
+                    <button class="btn" type="button">Подробнее</button>
+                </article>
+
+                <article class="project-card">
+                    <h3>Калькулятор</h3>
+                    <p>Стек: HTML, CSS, JavaScript</p>
+                    <button class="btn" type="button">Подробнее</button>
+                </article>
+
+                <article class="project-card">
+                    <h3>Telegram-бот</h3>
+                    <p>Стек: Python, aiogram</p>
+                    <button class="btn" type="button">Подробнее</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Скриншоты проектов</h2>
+            <div class="gallery-grid">
+                <figure>
+                    <img src="image/portfolio-1.jpg" alt="Главная страница сайта-портфолио с шапкой и навигацией" width="640" height="400">
+                    <figcaption>Сайт-портфолио: главная страница</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/portfolio-2.jpg" alt="Блок навыков сайта-портфолио в виде карточек" width="640" height="400">
+                    <figcaption>Сайт-портфолио: блок навыков</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/calc-1.jpg" alt="Калькулятор с цифровой клавиатурой и экраном результата" width="640" height="400">
+                    <figcaption>Калькулятор: основной экран</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/calc-2.jpg" alt="Калькулятор с историей вычислений" width="640" height="400">
+                    <figcaption>Калькулятор: история вычислений</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/bot-1.jpg" alt="Диалог с Telegram-ботом: команда /start и приветствие" width="640" height="400">
+                    <figcaption>Telegram-бот: приветствие</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/bot-2.jpg" alt="Telegram-бот отвечает на команду со списком возможностей" width="640" height="400">
+                    <figcaption>Telegram-бот: список команд</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Обратная связь</h2>
+            <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Напишите сообщение..." required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <aside>
+            <h3>Любимые инструменты</h3>
+            <ul>
+                <li><a href="https://code.visualstudio.com" target="_blank" rel="noopener">VS Code</a></li>
+                <li><a href="https://git-scm.com" target="_blank" rel="noopener">Git</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Горбик Софья Алексеевна</p>
+    </footer>
+
+</body>
+</html>

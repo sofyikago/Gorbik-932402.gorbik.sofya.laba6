@@ -1,0 +1,14 @@
+{
+  "name": "lab6",
+  "version": "1.0.0",
+  "description": "Лабораторная работа №6: сервер на Express и PWA",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Горбик Софья Алексеевна",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
